@@ -1,9 +1,10 @@
 # Auto Encoder (AE) :
 
 This model is able to recreate the input. 
-This is then often used to recreate image which are noisy or blurry..
+This is then often used to recreate image which are noisy or blurry.. It can also be linked with compressed search system.
 
 Here we will be recreating images of the MNIST dataset.
+We will compressed the 784 pixels images down to 64 values only.
 
 ## How does it works ?
 
@@ -18,3 +19,4 @@ https://github.com/Axelsalamartin/GAN
 
 Here is a link to an AE trained on recreating pokemons :
 https://hackernoon.com/how-to-autoencode-your-pok%C3%A9mon-6b0f5c7b7d97
+The cool thing here is that the encoding downsample each pokemon down to only 4 values. So the model is able to recreate a original pokemon of 12288 values based on only 4 !
