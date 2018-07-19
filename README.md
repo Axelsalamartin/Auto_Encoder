@@ -1,17 +1,16 @@
 # Auto Encoder (AE) :
 
 This model is able to recreate the input. 
-This is then often used to recreate image which are noisy or blurry.. It can also be linked with compressed search system.
+It is often used to recreate images which are noisy or blurry.. It can also be linked with compressed search systems.
 
 Here we will be recreating images of the MNIST dataset.
-We will compressed the 784 pixels images down to 64 values only.
+We will compress the 784 pixels images down to 64 values only.
 
 ## How does it works ?
 
 The first part is to encode the input to create kind of a compressed version of it. 
-Then there is the decode part where it recreate an output from the compressed version. 
-During the training the model learns to compress the most important features of the data so that it can recreate it correctly.
-The sentence often used about these types of algorithm (also GAN) is : "I can not create what I don't understand."
+Then there is the decode part where it recreates an output from the compressed version.
+The sentence often used about these type of algorithms (also GAN) is : "I can not create what I don't understand."
 So as it says the model learns what are the important features and then encode those specific features to get them back with the decode part. 
 
 Now trying a Variation Auto Encoder (VAE) to create new data could be nice. I do this using a Generative Adversarial Network(GAN) here : 
